@@ -1,14 +1,15 @@
 ﻿using Business.Abstract;
+using DataAccess.Abstracts;
 using Entities.Concretes;
 
 namespace Business.Concrete
 {
     public class TestimonialManager : ITestimonialService 
     {
-        private ITestimonialService _testimonialService;
-        public TestimonialManager(ITestimonialService testimonialService)
+        private ITestimonialDal _testimonialDal;
+        public TestimonialManager(ITestimonialDal testimonialDal)
         {
-            _testimonialService = testimonialService;
+            _testimonialDal = testimonialDal;
         }
 
         public void Add(Testimonial testimonial)

@@ -1,14 +1,15 @@
 ﻿using Business.Abstract;
+using DataAccess.Abstracts;
 using Entities.Concretes;
 
 namespace Business.Concrete
 {
     public class SubAboutManager : ISubAboutService 
     {
-        private ISubAboutService _subAboutService;
-        public SubAboutManager(ISubAboutService subAboutService)
+        private ISubAboutDal _subAboutDal;
+        public SubAboutManager(ISubAboutDal subAboutDal)
         {
-            _subAboutService = subAboutService;
+            _subAboutDal = subAboutDal;
         }
 
         public void Add(SubAbout subAbout)

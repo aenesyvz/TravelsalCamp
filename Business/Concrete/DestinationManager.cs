@@ -24,7 +24,7 @@ namespace Business.Concrete
 
         public void GetAll()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void GetById(int id)
