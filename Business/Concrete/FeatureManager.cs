@@ -14,27 +14,27 @@ namespace Business.Concrete
 
         public void Add(Feature feature)
         {
-            throw new NotImplementedException();
+            _featureDal.Add(feature);
         }
 
         public void Delete(Feature feature)
         {
-            throw new NotImplementedException();
+            _featureDal.Delete(feature);
         }
 
-        public void GetAll()
+        public List<Feature> GetAll()
         {
-            throw new NotImplementedException();
+            return _featureDal.GetAll();
         }
 
-        public void GetById(int id)
+        public Feature GetById(int id)
         {
-            throw new NotImplementedException();
+            return _featureDal.Get(x=>x.Id == id);
         }
 
         public void Update(Feature feature)
         {
-            throw new NotImplementedException();
+            _featureDal.Update(feature);
         }
     }
 }

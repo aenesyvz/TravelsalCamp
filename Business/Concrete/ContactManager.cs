@@ -14,27 +14,27 @@ namespace Business.Concrete
 
         public void Add(Contact contact)
         {
-            throw new NotImplementedException();
+            _contactDal.Add(contact);
         }
 
         public void Delete(Contact contact)
         {
-            throw new NotImplementedException();
+            _contactDal.Delete(contact);
         }
 
-        public void GetAll()
+        public List<Contact> GetAll()
         {
-            throw new NotImplementedException();
+            return _contactDal.GetAll();
         }
 
-        public void GetAllById(int id)
+        public Contact GetById(int id)
         {
-            throw new NotImplementedException();
+            return _contactDal.Get(x => x.Id == id);
         }
 
         public void Update(Contact contact)
         {
-            throw new NotImplementedException();
+            _contactDal.Update(contact);
         }
     }
 }

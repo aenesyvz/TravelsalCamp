@@ -7,7 +7,7 @@ namespace Business.Abstract
         void Add(Guide guide);
         void Update(Guide guide); 
         void Delete(Guide guide); 
-        void GetAll(); 
-        void GetById(int id);
+        List<Guide> GetAll(); 
+        Guide GetById(int id);
     }
 }

@@ -7,7 +7,7 @@ namespace Business.Abstract
         void Add(Destination destination);
         void Update(Destination destination);
         void Delete(Destination destination);
-        void GetAll();
-        void GetById(int id);
+        List<Destination> GetAll();
+        Destination GetById(int id);
     }
 }

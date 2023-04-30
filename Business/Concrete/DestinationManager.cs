@@ -14,27 +14,27 @@ namespace Business.Concrete
 
         public void Add(Destination destination)
         {
-            throw new NotImplementedException();
+            _destinationDal.Add(destination);
         }
 
         public void Delete(Destination destination)
         {
-            throw new NotImplementedException();
+            _destinationDal.Delete(destination);
         }
 
-        public void GetAll()
+        public List<Destination> GetAll()
         {
-            
+            return _destinationDal.GetAll();
         }
 
-        public void GetById(int id)
+        public Destination GetById(int id)
         {
-            throw new NotImplementedException();
+            return _destinationDal.Get(x => x.Id == id);
         }
 
         public void Update(Destination destination)
         {
-            throw new NotImplementedException();
+            _destinationDal.Update(destination);
         }
     }
 }

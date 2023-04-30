@@ -9,8 +9,8 @@ namespace TravelsalCamp.ViewComponents.Default
         SubAboutManager subAboutManager = new SubAboutManager(new EfSubAboutDal());
         public IViewComponentResult Invoke()
         {
-            //var values = about2Manager.GetAll();
-            return View();
+            var values = subAboutManager.GetAll();
+            return View(values);
         }
     }
 }

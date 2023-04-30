@@ -9,8 +9,8 @@ namespace TravelsalCamp.ViewComponents.Default
         DestinationManager destinationManager = new DestinationManager(new EfDestinationDal());
         public IViewComponentResult Invoke()
         {
-            //var values = destinationManager.GetAll();
-            return View();
+            var values = destinationManager.GetAll();
+            return View(values);
         }
     }
 }

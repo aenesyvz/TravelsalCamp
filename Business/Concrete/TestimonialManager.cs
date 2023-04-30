@@ -14,27 +14,27 @@ namespace Business.Concrete
 
         public void Add(Testimonial testimonial)
         {
-            throw new NotImplementedException();
+            _testimonialDal.Add(testimonial);
         }
 
         public void Delete(Testimonial testimonial)
         {
-            throw new NotImplementedException();
+            _testimonialDal.Delete(testimonial);
         }
 
-        public void GetAll()
+        public List<Testimonial> GetAll()
         {
-            throw new NotImplementedException();
+            return _testimonialDal.GetAll();    
         }
 
-        public void GetById(int id)
+        public Testimonial GetById(int id)
         {
-            throw new NotImplementedException();
+           return _testimonialDal.Get(x=>x.Id== id);
         }
 
         public void Update(Testimonial testimonial)
         {
-            throw new NotImplementedException();
+            _testimonialDal.Update(testimonial);
         }
     }
 }

@@ -7,7 +7,7 @@ namespace Business.Abstract
         void Add(Testimonial testimonial);
         void Update(Testimonial testimonial); 
         void Delete(Testimonial testimonial); 
-        void GetAll(); 
-        void GetById(int id);
+        List<Testimonial> GetAll(); 
+        Testimonial GetById(int id);
     }
 }

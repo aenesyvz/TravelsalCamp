@@ -14,27 +14,27 @@ namespace Business.Concrete
 
         public void Add(SubAbout subAbout)
         {
-            throw new NotImplementedException();
+            _subAboutDal.Add(subAbout);
         }
 
         public void Delete(SubAbout subAbout)
         {
-            throw new NotImplementedException();
+            _subAboutDal.Delete(subAbout);
         }
 
-        public void GetAll()
+        public List<SubAbout> GetAll()
         {
-            throw new NotImplementedException();
+            return _subAboutDal.GetAll();
         }
 
-        public void GetById(int id)
+        public SubAbout GetById(int id)
         {
-            throw new NotImplementedException();
+            return _subAboutDal.Get(x=>x.Id== id);
         }
 
         public void Update(SubAbout subAbout)
         {
-            throw new NotImplementedException();
+           _subAboutDal.Update(subAbout);
         }
     }
 }

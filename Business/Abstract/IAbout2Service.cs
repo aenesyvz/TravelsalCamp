@@ -7,7 +7,7 @@ namespace Business.Abstract
         void Add(About2 about2);
         void Update(About2 about2);
         void Delete(About2 about2);
-        void GetAll();
-        void GetById(int id);
+        List<About2> GetAll();
+        About2 GetById(int id);
     }
 }

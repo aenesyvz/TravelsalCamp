@@ -7,7 +7,7 @@ namespace Business.Abstract
         void Add(Feature feature);
         void Update(Feature feature);
         void Delete(Feature feature);
-        void GetAll();
-        void GetById(int id);
+        List<Feature> GetAll();
+        Feature GetById(int id);
     }
 }

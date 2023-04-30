@@ -7,7 +7,7 @@ namespace Business.Abstract
         void Add(Contact contact);
         void Update(Contact contact);
         void Delete(Contact contact);
-        void GetAll();
-        void GetAllById(int id);
+        List<Contact> GetAll();
+        Contact GetById(int id);
     }
 }

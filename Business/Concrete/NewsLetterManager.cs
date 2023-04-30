@@ -14,27 +14,27 @@ namespace Business.Concrete
 
         public void Add(NewsLetter newsLetter)
         {
-            throw new NotImplementedException();
+           _newsLetterDal.Add(newsLetter);  
         }
 
         public void Delete(NewsLetter newsLetter)
         {
-            throw new NotImplementedException();
+            _newsLetterDal.Delete(newsLetter);
         }
 
-        public void GetAll()
+        public List<NewsLetter> GetAll()
         {
-            throw new NotImplementedException();
+           return _newsLetterDal.GetAll();
         }
 
-        public void GetById(int id)
+        public NewsLetter GetById(int id)
         {
-            throw new NotImplementedException();
+            return _newsLetterDal.Get(x => x.Id == id);
         }
 
         public void Update(NewsLetter newsLetter)
         {
-            throw new NotImplementedException();
+           _newsLetterDal.Update(newsLetter);
         }
     }
 }

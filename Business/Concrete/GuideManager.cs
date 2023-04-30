@@ -14,27 +14,27 @@ namespace Business.Concrete
 
         public void Add(Guide guide)
         {
-            throw new NotImplementedException();
+            _guideDal.Add(guide);
         }
 
         public void Delete(Guide guide)
         {
-            throw new NotImplementedException();
+           _guideDal.Delete(guide);
         }
 
-        public void GetAll()
+        public List<Guide> GetAll()
         {
-            throw new NotImplementedException();
+           return _guideDal.GetAll();
         }
 
-        public void GetById(int id)
+        public Guide GetById(int id)
         {
-            throw new NotImplementedException();
+            return _guideDal.Get(x => x.Id == id);
         }
 
         public void Update(Guide guide)
         {
-            throw new NotImplementedException();
+            _guideDal.Update(guide);
         }
     }
 }

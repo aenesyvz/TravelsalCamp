@@ -14,27 +14,27 @@ namespace Business.Concrete
 
         public void Add(About2 about2)
         {
-            throw new NotImplementedException();
+            _about2Dal.Add(about2);
         }
 
         public void Delete(About2 about2)
         {
-            throw new NotImplementedException();
+            _about2Dal.Delete(about2);
         }
 
-        public void GetAll()
+        public List<About2> GetAll()
         {
-            throw new NotImplementedException();
+            return _about2Dal.GetAll();
         }
 
-        public void GetById(int id)
+        public About2 GetById(int id)
         {
-            throw new NotImplementedException();
+            return _about2Dal.Get(x => x.Id == id);
         }
 
         public void Update(About2 about2)
         {
-            throw new NotImplementedException();
+            _about2Dal.Update(about2);
         }
     }
 }
