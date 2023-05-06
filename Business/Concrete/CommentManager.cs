@@ -33,6 +33,16 @@ namespace Business.Concrete
             return _commentDal.GetAll();    
         }
 
+        public List<Comment> GetAllByDestinationId(int destinationId)
+        {
+            return _commentDal.GetAll(x => x.DestinationId == destinationId);
+        }
+
+        public List<Comment> GetAllByDestinationIdAndStatus(int destinationId)
+        {
+            return _commentDal.GetAll(x => x.DestinationId == destinationId && x.Status == true);
+        }
+
         public Comment GetById(int id)
         {
             return _commentDal.Get(x=>x.Id== id);

@@ -1,12 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Business.Concrete;
+using DataAccess.Concretes;
+using Microsoft.AspNetCore.Mvc;
 
 namespace TravelsalCamp.ViewComponents.Comment
 {
     public class _CommentList:ViewComponent
     {
-        public IViewComponentResult Invoke()
+        CommentManager commentManager = new CommentManager(new EfCommentDal());
+        public IViewComponentResult Invoke(int destinationId)
         {
-            return View();
+            var values = commentManager.GetAllByDestinationIdAndStatus(destinationId);
+            return View(values);
         }
     }
 }

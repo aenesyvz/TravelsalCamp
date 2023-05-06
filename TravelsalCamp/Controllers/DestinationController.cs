@@ -17,6 +17,7 @@ namespace TravelsalCamp.Controllers
         [HttpGet]
         public IActionResult DestinationDetails(int id)
         {
+            ViewBag.destinationId = id;
             var values = destinationManager.GetById(id);
             return View(values);
         }
