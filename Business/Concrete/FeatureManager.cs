@@ -29,7 +29,7 @@ namespace Business.Concrete
 
         public Feature GetById(int id)
         {
-            return _featureDal.Get(x=>x.Id == id);
+            return _featureDal.Get(x=>x.FeatureID == id);
         }
 
         public void Update(Feature feature)

@@ -29,7 +29,7 @@ namespace Business.Concrete
 
         public Guide GetById(int id)
         {
-            return _guideDal.Get(x => x.Id == id);
+            return _guideDal.Get(x => x.GuideID == id);
         }
 
         public void Update(Guide guide)

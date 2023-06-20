@@ -29,7 +29,7 @@ namespace Business.Concrete
 
         public SubAbout GetById(int id)
         {
-            return _subAboutDal.Get(x=>x.Id== id);
+            return _subAboutDal.Get(x=>x.SubAboutID== id);
         }
 
         public void Update(SubAbout subAbout)

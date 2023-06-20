@@ -4,9 +4,11 @@ namespace Entities.Concretes
 {
     public class AppUser:IdentityUser<int>
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Gender { get; set; }
         public string ImageUrl { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string Gender { get; set; }
+        public List<Reservation> Reservations { get; set; }
+        public List<Comment> Comments { get; set; }
     }
 }

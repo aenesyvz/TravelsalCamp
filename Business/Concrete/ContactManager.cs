@@ -29,7 +29,7 @@ namespace Business.Concrete
 
         public Contact GetById(int id)
         {
-            return _contactDal.Get(x => x.Id == id);
+            return _contactDal.Get(x => x.ContactID == id);
         }
 
         public void Update(Contact contact)

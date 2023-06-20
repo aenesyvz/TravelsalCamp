@@ -24,7 +24,7 @@ namespace Business.Concrete
 
         public void Delete(int id)
         {
-            Comment deleteComment = _commentDal.Get(x => x.Id == id);
+            Comment deleteComment = _commentDal.Get(x => x.CommentID == id);
             _commentDal.Delete(deleteComment);
         }
 
@@ -35,17 +35,17 @@ namespace Business.Concrete
 
         public List<Comment> GetAllByDestinationId(int destinationId)
         {
-            return _commentDal.GetAll(x => x.DestinationId == destinationId);
+            return _commentDal.GetAll(x => x.DestinationID == destinationId);
         }
 
         public List<Comment> GetAllByDestinationIdAndStatus(int destinationId)
         {
-            return _commentDal.GetAll(x => x.DestinationId == destinationId && x.Status == true);
+            return _commentDal.GetAll(x => x.DestinationID == destinationId);
         }
 
         public Comment GetById(int id)
         {
-            return _commentDal.Get(x=>x.Id== id);
+            return _commentDal.Get(x=>x.CommentID== id);
         }
 
         public void Update(Comment comment)

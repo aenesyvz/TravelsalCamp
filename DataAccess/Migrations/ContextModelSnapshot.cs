@@ -47,7 +47,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Abouts");
+                    b.ToTable("Abouts", (string)null);
                 });
 
             modelBuilder.Entity("Entities.Concretes.About2", b =>
@@ -76,7 +76,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("About2s");
+                    b.ToTable("About2s", (string)null);
                 });
 
             modelBuilder.Entity("Entities.Concretes.AppRole", b =>
@@ -222,7 +222,7 @@ namespace DataAccess.Migrations
 
                     b.HasIndex("DestinationId");
 
-                    b.ToTable("Comments");
+                    b.ToTable("Comments", (string)null);
                 });
 
             modelBuilder.Entity("Entities.Concretes.Contact", b =>
@@ -258,7 +258,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Contacts");
+                    b.ToTable("Contacts", (string)null);
                 });
 
             modelBuilder.Entity("Entities.Concretes.Destination", b =>
@@ -312,7 +312,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Destinations");
+                    b.ToTable("Destinations", (string)null);
                 });
 
             modelBuilder.Entity("Entities.Concretes.Feature", b =>
@@ -340,7 +340,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Features");
+                    b.ToTable("Features", (string)null);
                 });
 
             modelBuilder.Entity("Entities.Concretes.Guide", b =>
@@ -376,7 +376,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Guides");
+                    b.ToTable("Guides", (string)null);
                 });
 
             modelBuilder.Entity("Entities.Concretes.NewsLetter", b =>
@@ -393,7 +393,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("NewsLetters");
+                    b.ToTable("NewsLetters", (string)null);
                 });
 
             modelBuilder.Entity("Entities.Concretes.SubAbout", b =>
@@ -414,7 +414,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("SubAbouts");
+                    b.ToTable("SubAbouts", (string)null);
                 });
 
             modelBuilder.Entity("Entities.Concretes.Testimonial", b =>
@@ -442,7 +442,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Testimonials");
+                    b.ToTable("Testimonials", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>

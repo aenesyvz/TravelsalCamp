@@ -29,7 +29,7 @@ namespace Business.Concrete
 
         public About2 GetById(int id)
         {
-            return _about2Dal.Get(x => x.Id == id);
+            return _about2Dal.Get(x => x.About2ID == id);
         }
 
         public void Update(About2 about2)

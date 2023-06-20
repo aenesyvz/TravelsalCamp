@@ -4,7 +4,7 @@ namespace Entities.Concretes
 {
     public class NewsLetter:IEntity
     {
-        public int Id { get; set; }
+        public int NewsletterID { get; set; }
         public string Mail { get; set; }
     }
 }

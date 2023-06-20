@@ -29,7 +29,7 @@ namespace Business.Concrete
 
         public Destination GetById(int id)
         {
-            return _destinationDal.Get(x => x.Id == id);
+            return _destinationDal.Get(x => x.DestinationID == id);
         }
 
         public void Update(Destination destination)

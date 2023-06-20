@@ -5,7 +5,7 @@
         Your email address will not be published. Required fields are marked *
     </p>
     <form method="post" asp-action="AddComment" asp-controller="Comment">
-        @Html.HiddenFor(x => x.DestinationId,new { Value = ViewBag.destinationId } )
+       @* @Html.HiddenFor(x => x.DestinationId,new { Value = ViewBag.destinationId } )*@
 
         <div class="form-group">
             <textarea name="Content" class="form-control" placeholder="Your Comment*" required=""

@@ -29,7 +29,7 @@ namespace Business.Concrete
 
         public Testimonial GetById(int id)
         {
-           return _testimonialDal.Get(x=>x.Id== id);
+           return _testimonialDal.Get(x=>x.TestimonialID== id);
         }
 
         public void Update(Testimonial testimonial)

@@ -4,7 +4,7 @@ namespace Entities.Concretes
 {
     public class SubAbout:IEntity
     {
-        public int Id { get; set; }
+        public int SubAboutID { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
     }

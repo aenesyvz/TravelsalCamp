@@ -29,7 +29,7 @@ namespace Business.Concrete
 
         public NewsLetter GetById(int id)
         {
-            return _newsLetterDal.Get(x => x.Id == id);
+            return _newsLetterDal.Get(x => x.NewsletterID == id);
         }
 
         public void Update(NewsLetter newsLetter)

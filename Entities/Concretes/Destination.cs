@@ -9,7 +9,7 @@ namespace Entities.Concretes
 {
     public class Destination:IEntity
     {
-        public int Id { get; set; }
+        public int DestinationID { get; set; }
         public string City { get; set; }
         public string DayNight { get; set; }
         public double Price { get; set; }
@@ -18,9 +18,13 @@ namespace Entities.Concretes
         public int Capacity { get; set; }
         public bool Status { get; set; }
         public string CoverImage { get; set; }
-        public string Detail1 { get; set; }
-        public string Detail2 { get; set; }
+        public string Details1 { get; set; }
+        public string Details2 { get; set; }
         public string Image2 { get; set; }
+        public DateTime Date { get; set; }
         public List<Comment> Comments { get; set; }
+        public List<Reservation> Reservations { get; set; }
+        public int GuideID { get; set; }
+        public Guide Guide { get; set; }
     }
 }

@@ -34,7 +34,7 @@ namespace Business.Concrete
 
         public About GetById(int id)
         {
-            return _aboutDal.Get(x=> x.Id == id);
+            return _aboutDal.Get(x=> x.AboutID == id);
         }
 
         public void Update(About about)
