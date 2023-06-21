@@ -9,7 +9,8 @@ namespace TravelsalCamp.ViewComponents.Default
         TestimonialManager testimonialManager = new TestimonialManager(new EfTestimonialDal());
         public IViewComponentResult Invoke()
         {
-            return View();
+            var values = testimonialManager.GetAll();
+            return View(values);
         }
     }
 }

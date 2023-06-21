@@ -20,7 +20,8 @@ namespace TravelsalCamp.Controllers
         {
 
             comment.CommentDate = Convert.ToDateTime(DateTime.Now.ToShortDateString());
-   
+            comment.CommentState = true;
+
             commentManager.Add(comment);
             return RedirectToAction("Index","Destination");
 
