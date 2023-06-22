@@ -32,6 +32,16 @@ namespace Business.Concrete
             return _destinationDal.Get(x => x.DestinationID == id);
         }
 
+        public Destination GetDestinationWithGuide(int id)
+        {
+            return _destinationDal.GetDestinationWithGuide(id);
+        }
+
+        public List<Destination> GetLast4Destinations()
+        {
+            return _destinationDal.GetLast4Destinations();
+        }
+
         public void Update(Destination destination)
         {
             _destinationDal.Update(destination);

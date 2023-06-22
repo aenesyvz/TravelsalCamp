@@ -17,6 +17,16 @@ namespace Business.Concrete
             _guideDal.Add(guide);
         }
 
+        public void ChangeToFalseByGuide(int id)
+        {
+            _guideDal.ChangeToFalseByGuide(id);
+        }
+
+        public void ChangeToTrueByGuide(int id)
+        {
+            _guideDal.ChangeToTrueByGuide(id);
+        }
+
         public void Delete(Guide guide)
         {
            _guideDal.Delete(guide);

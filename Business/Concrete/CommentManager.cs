@@ -43,6 +43,16 @@ namespace Business.Concrete
             return _commentDal.GetAll(x => x.DestinationID == destinationId);
         }
 
+        public List<Comment> GetAllCommentWithDestination()
+        {
+            return _commentDal.GetListCommentWithDestination();
+        }
+
+        public List<Comment> GetAllCommentWithDestinationAndUser(int id)
+        {
+            return _commentDal.GetListCommentWithDestinationAndUser(id);
+        }
+
         public Comment GetById(int id)
         {
             return _commentDal.Get(x=>x.CommentID== id);

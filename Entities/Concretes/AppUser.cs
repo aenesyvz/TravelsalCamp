@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Core.Entities.Abstracts;
+using Microsoft.AspNetCore.Identity;
 
 namespace Entities.Concretes
 {
-    public class AppUser:IdentityUser<int>
+    public class AppUser:IdentityUser<int>,IEntity
     {
         public string ImageUrl { get; set; }
         public string Name { get; set; }

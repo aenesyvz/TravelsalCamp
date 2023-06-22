@@ -42,4 +42,5 @@ namespace Business.Concrete
             _aboutDal.Update(about);
         }
     }
+
 }

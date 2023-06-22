@@ -9,5 +9,7 @@ namespace Business.Abstract
         void Delete(Guide guide); 
         List<Guide> GetAll(); 
         Guide GetById(int id);
+        void ChangeToTrueByGuide(int id);
+        void ChangeToFalseByGuide(int id);
     }
 }

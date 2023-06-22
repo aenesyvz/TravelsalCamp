@@ -26,7 +26,7 @@ namespace TravelsalCamp.Controllers
             ViewBag.destinationId = id;
             var value = await _userManager.FindByNameAsync(User.Identity.Name);
             ViewBag.userID = value.Id;
-            var values = destinationManager.GetById(id);
+            var values = destinationManager.GetDestinationWithGuide(id);
             return View(values);
         }
         [HttpPost]
